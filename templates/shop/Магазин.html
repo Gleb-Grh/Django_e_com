@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block title %}
+    Магазин
+{% endblock title %}
+
+{% block container %}
+<section class="u-align-center u-clearfix u-section-1" id="sec-4ac9">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-expanded-width u-table u-table-responsive u-table-1">
+        <table class="u-table-entity u-table-entity-1">
+          <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+          </colgroup>
+          <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+            <tr style="height: 65px;">
+              <td class="u-table-cell">Заказ № </td>
+              <td class="u-table-cell">Наименование </td>
+              <td class="u-table-cell">Кол-во </td>
+              {% for product in object_list %}
+                </tr>
+                <form method="post" action="{% url 'add_item_to_cart' product.pk %}">
+                <tr style="height: 65px;">
+                  <td class="u-table-cell">{{ product.name}}</td>
+                  <td class="u-table-cell">{{ product.price }}</td>
+                  <td class="u-table-cell"><label class="form-label" for="id_quantity"></label><input type="number" name="quantity" value="1" min="1"required id="id_quantity"/></td>
+                  <td class="u-table-cell"><form method="post" action="{% url 'add_item_to_cart' product.pk %}">{% csrf_token %}<button type="submit" style="color: blue"><u>в корзину</u></button></td>                
+                </form>
+                </tr>
+              {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </section>
+{% endblock container %}    
+   

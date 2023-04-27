@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block title %}
+    Корзина
+{% endblock title %}
+
+{% block container %}
+<section class="u-align-center u-clearfix u-section-1" id="sec-4ac9">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-expanded-width u-table u-table-responsive u-table-1">
+        <table class="u-table-entity u-table-entity-1">
+          <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+          </colgroup>
+          <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+            <tr style="height: 65px;">
+              <td class="u-table-cell">Заказ № </td>
+              <td class="u-table-cell">Наименование </td>
+              <td class="u-table-cell">Кол-во </td>
+              <td class="u-table-cell">Сумма </td>
+              <td class="u-table-cell">Сумма </td>
+            {% for item in items %}
+            </tr>
+            <tr style="height: 65px;">
+              <td class="u-table-cell">{{ forloop.counter }}</td>
+              <td class="u-table-cell">{{ item.product }}</td>
+              <td class="u-table-cell">{{ item.quantity }}</td>
+              <td class="u-table-cell">{{ item.amount }}</td>
+              <td class="u-table-cell"><form method="post" action="{% url 'cart_delete_item' item.pk %}">{% csrf_token %}<button type="submit" style="color: blue"><u>delete</u></button></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </section>
+{% endblock container %}    
+   

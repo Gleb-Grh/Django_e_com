@@ -1,0 +1,222 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$4j2vxgKqIZ2dPnXfgoZ9VP$5tL5zvy66l9lrd075w2xTOyEsiu3z1TyudGAkKXqeBg=",
+            "last_login": "2023-04-24T07:51:05.773Z",
+            "is_superuser": true,
+            "username": "Admin",
+            "first_name": "Gleb",
+            "last_name": "",
+            "email": "glebgrh@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-04-17T14:10:10Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$KD8Q54pno2RwFBYYhtn7lU$zZb/qUUxzGgcXKjLPf+zeFhIiP90cx2oVjExbXK3wHE=",
+            "last_login": "2023-04-20T13:55:00.476Z",
+            "is_superuser": false,
+            "username": "user11",
+            "first_name": "",
+            "last_name": "",
+            "email": "abcde@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-04-20T13:55:00.121Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$wk8ygQlOWgSNO9qd8CWwSC$g3RguXxrCLQb4M4bpkPweVYnkRkHD1Vk3sGOkLVGqkQ=",
+            "last_login": "2023-04-20T15:04:59.470Z",
+            "is_superuser": false,
+            "username": "user3",
+            "first_name": "",
+            "last_name": "",
+            "email": "1234567@gfhf.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-04-20T14:23:21.849Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$zGldsIju6CuqPl4CJxZGRO$6vxz/tjDi4Ydx7aj1miAN8r1KyumNFjsxL/nkSqZbNY=",
+            "last_login": "2023-04-20T15:07:53.460Z",
+            "is_superuser": false,
+            "username": "user4",
+            "first_name": "",
+            "last_name": "",
+            "email": "glebbb@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-04-20T15:06:46.078Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "shop",
+            "model": "orderitem"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "shop",
+            "model": "product"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "shop",
+            "model": "order"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "shop",
+            "model": "payment"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "88ctg78abog7r3enpwui7mqcix80v9ek",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnrnxxT0nMGa9de4wBypDipIu5OIqWA9s3M20TEdalx7TzHMYurUOLyuxGmF7cD5Ce2xyTT1JZ5JHko8qRd3qfM79vp_h1U7HWvjStIrAJ4yMBZkdaBrQekUgA92eLI0a4YHezgLQQbHOmBOVAy2ojPF_ZkOCY:1pqqyX:LTyL6IkZoWpQpGlp4ReqyoFL8g6CGQS7l0Bpunn4aeA",
+            "expire_date": "2023-05-08T07:51:05.786Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 1,
+        "fields": {
+            "name": "Engine",
+            "code": "123",
+            "price": "100000.00",
+            "unit": null,
+            "image_url": null,
+            "note": ""
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Transmission",
+            "code": "321",
+            "price": "70000.00",
+            "unit": null,
+            "image_url": null,
+            "note": ""
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 3,
+        "fields": {
+            "name": "Wing",
+            "code": "1",
+            "price": "7000.00",
+            "unit": null,
+            "image_url": null,
+            "note": ""
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 4,
+        "fields": {
+            "name": "Door",
+            "code": "3",
+            "price": "5000.00",
+            "unit": null,
+            "image_url": null,
+            "note": ""
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 5,
+        "fields": {
+            "name": "shock absorbers",
+            "code": "2",
+            "price": "10000.00",
+            "unit": null,
+            "image_url": null,
+            "note": ""
+        }
+    }
+]
